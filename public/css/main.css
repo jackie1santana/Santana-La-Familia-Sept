@@ -1,4 +1,22 @@
 
-body{
-    background: pink;
+html, body{
+    margin:0;
+}
+
+#banner{
+   
+    width:100vw;
+}
+
+/* body{
+    background: url("../images/SLF_logo_GirlfriendRoad.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+} */
+
+#underBanner{
+    position: absolute;
+    top:870px;
+    width:100vw;
 }

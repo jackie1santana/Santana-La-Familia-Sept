@@ -21,6 +21,6 @@ app.use(express.urlencoded({extended: false}))
 app.use('/home', require('./controller/routes'))
 
 app.listen(PORT, () => {
-    console.log(`Port: ${PORT}; running at localhost:${PORT}`)
+    console.log(`Port: ${PORT}; running at http://localhost:${PORT}/home`)
 })
 

@@ -1,11 +1,13 @@
 
 html, body{
     margin:0;
+    
 }
 
 #banner{
    
     width:100vw;
+    margin: 0;
 }
 
 /* body{
@@ -15,8 +17,26 @@ html, body{
     height: 100%;
 } */
 
-#underBanner{
+/* #underBanner{
     position: absolute;
     top:870px;
     width:100vw;
+} */
+
+.bg-before-testimonial{
+    background: #525E84;
+    width: 100vw;
+    height: 40vh;
+}
+
+.bg-testimonial{
+    background: #383B53;
+    width: 100vw;
+    height: 70vh;
+    
+}
+
+#form-bg{
+    width:100vw;
+    margin: 0;
 }

@@ -5,7 +5,9 @@
 
 html, body{
     margin:0;
+    padding: 0;
     /* color: white; */
+    
 }
 
 #banner{
@@ -43,16 +45,22 @@ html, body{
 #form-bg{
     width:100vw;
     margin: 0;
+    
 }
 
 footer{
     background: #383B53;
-    height: 20vh;
+    height: 20vh; 
     width: 100vw;
+    /* min-height: 30vh; */
+    
 }
 
 #slf-logo{
     color: white;
     font-family: Gab;
     font-size: 3.5rem;
+}
+#wrapAround-img-footer{
+    background: #383B53;
 }

@@ -1,0 +1,28 @@
+<footer>
+    {{!-- Top Left - SLF Logo --}}
+    <div id="top-layer-footer">
+        <span id="slf-logo">Santana La Familia</span>
+
+    {{!-- Top Right - Social Media Icons --}}
+         <ul id="social-media-icons">
+            <li>Tw</li>
+            <li>IG</li>
+            <li>FB</li>
+        </ul>
+    </div>
+
+    {{!-- Middle Right - Policy --}}
+    <div>
+        <p>Privacy Policy</p>
+    </div>
+
+    {{!-- Bottom Address --}}
+    <div>
+        <ul>
+            <li>Melrose Place, 90210, <br> USA</li>
+            <li>Santana La Familia © 2020 new date</li>
+            <li>Terms of Service</li>
+        </ul>
+    </div>
+</footer>
+</div>

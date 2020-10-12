@@ -3,6 +3,11 @@
     font-family: Gab;
 }
 
+@font-face {
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-family: Mont;
+}
+
 html, body{
     margin:0;
     padding: 0;
@@ -57,7 +62,7 @@ body{
 
 footer{
     text-align: center;
-    padding: 2rem;
+    padding: 1.6rem;
     background: #383B53;
 
     margin-bottom: -50px;
@@ -93,23 +98,31 @@ footer{
 .footer__social a {
     margin-left: 20px;
     margin-right: 20px;
-    height: 5px;
-    width: 5px;
+}
+
+.footer__social a img {
+    height: 30px;
+    width: 30px;
 }
 
 
     /* mobile */
 .footer__links a {
-    color: white;
+    color: #9D9D9D;
     margin:20px;
-    
+    font-family:Mont;
+    font-size: 14px;
 }
 
-.footer__links{
-    margin-top: 20px;
+
+
+.col1 a{
+    text-decoration: none;
 }
+
 .col2 a{
     display: block;
+    text-decoration: none;
     /* margin-bottom: 1.875rem; */
 }
 

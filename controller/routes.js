@@ -5,7 +5,7 @@ require('../model/database')
 
 router.get('/', (req, res) => {
     res.render('index', {
-        title: 'member'
+        date: new Date().getFullYear()
     })
 })
 

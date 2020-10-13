@@ -8,12 +8,12 @@
     font-family: Mont;
 }
 
-html, body{
+body{
     margin:0;
     padding: 0;
-    min-height: 100%;
-    /* color: white; */
-    
+}
+html, body{
+    height: 100vh;   
 }
 
 body{
@@ -25,19 +25,6 @@ body{
     width:100vw;
     margin: 0;
 }
-
-/* body{
-    background: url("../images/SLF_logo_GirlfriendRoad.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-} */
-
-/* #underBanner{
-    position: absolute;
-    top:870px;
-    width:100vw;
-} */
 
 .bg-before-testimonial{
     background: #525E84;
@@ -59,39 +46,24 @@ body{
 }
 
     /* Mobile */
-
 footer{
     text-align: center;
     padding: 1.6rem;
     background: #383B53;
-
     margin-bottom: -50px;
-    /* min-height: 30vh; */
-    
 }
+
 #wrapAround-img-footer{
     background: #383B53;
-}
-
-#top-layer-footer{
-    /* display: flex;
-    margin: 100px; */
-}
-
-
-#social-media-icons{
-    
 }
 
 .footer__logo{
     color: white;
     font-family: Gab;
     font-size: 3.5rem;
-
 }
 
 .footer__social{
-
     margin-top: 20px;
 }
 
@@ -105,8 +77,6 @@ footer{
     width: 30px;
 }
 
-
-    /* mobile */
 .footer__links a {
     color: #9D9D9D;
     margin:20px;
@@ -114,18 +84,64 @@ footer{
     font-size: 14px;
 }
 
-
-
 .col1 a{
     text-decoration: none;
+   
+}
+
+.col1 a:nth-child(1),.col1 a:nth-child(2){
+    display:none;
 }
 
 .col2 a{
     display: block;
     text-decoration: none;
-    /* margin-bottom: 1.875rem; */
 }
 
-/* .col2{
-    margin-bottom: 200px;
-} */
+
+
+    /* Desktop */
+    @media only screen and (min-width: 600px) {
+        footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+            /* grid template areas allows you to write out where you want your columens at exactly */
+            grid-template-areas: 
+            "logo links1 links2 social";
+        }
+
+        .footer__logo{
+          
+            grid-area: logo;
+        }
+
+       .col1{
+         
+            grid-area: links1;
+           
+        }
+
+        .col1 a:nth-child(1),.col1 a:nth-child(2){
+            opacity: 0;
+            display: block;
+        }
+
+        .col2{
+         
+            grid-area: links2;
+        }
+
+
+        .footer__social {
+        
+            grid-area: social;
+        }
+      
+        .footer__social a img {
+            height: 40px;
+            width: 40px;
+        }
+      }
+
+     

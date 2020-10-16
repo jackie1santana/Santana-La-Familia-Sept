@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
 @font-face {
     src: url(fonts/Gabrialle.ttf);
     font-family: Gab;
@@ -12,15 +20,18 @@
 
 
 
-body{
-    margin:0;
-    padding: 0;
+html{
+    box-sizing: border-box;
+    font-size: 100%;
 }
+
 html, body{
     height: 100vh;   
 }
 
 body{
+    margin:0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -30,40 +41,67 @@ body{
     margin: 0;
 }
 
-
-.bg-before-testimonial img{
-    height: 70px;
-    width: 70px;
-
-}
-
 .bg-before-testimonial{
     background: #525E84;
     display: grid;
-    justify-items: center;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: 25px;
+    width: 100vw;
 }
 
-.bg-before-testimonial p {
-    font-size: 12px;
+
+.bg-before-testimonial img{
+    display: block;
+    margin: auto;
+    height: 70px;
+    width: 70px;
+}
+
+.bg-before-testimonial figcaption {
+    font-size: 0.85rem;
     font-family: Mont;
     color: white;
 }
-
-.second_icon {
-    margin-top: 30px;
-}
-
 
 
 
 .bg-testimonial{
     background: #383B53;
     width: 100vw;
-    height: 70vh;
+    padding: 25px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.bg-testimonial figure{
+    background: #383B53;
+    width: 100vw;
+    margin: 0px;
     
 }
+
+.bg-testimonial img {
+    display: block;
+    margin: auto;
+    height: 70px;
+    width: 70px;
+}
+
+.bg-testimonial figcaption{
+    color: white;
+    font-family: Mont;
+    font-size: 0.85rem;
+}
+
+.bg-testimonial em {
+    color: white;
+}
+/* 
+.bg-testimonial img {
+    height: 70px;
+    width: 70px;
+} */
 
 #form-bg{
     width:100vw;
@@ -82,10 +120,12 @@ footer{
     padding: 1.6rem;
     background: #383B53;
     margin-bottom: -50px;
+    width: 100vw;
 }
 
 #wrapAround-img-footer{
     background: #383B53;
+    width: 100vw;
 }
 
 .footer__logo{
@@ -158,19 +198,41 @@ footer{
     @media only screen and (min-width: 600px) {
 
         .bg-before-testimonial img{
-            height: 70px;
-            width: 70px;
-        
+            height: 120px;
+            width: 120px;
         }
         
         .bg-before-testimonial{
-            background: #525E84;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            
+           grid-template-rows: auto;
            
         } 
- 
+
+        .bg-before-testimonial figcaption {
+            font-size: 1rem;
+        }
+
+
+
+        .bg-testimonial img {
+            height: 120px;
+            width: 120px;
+        }
+        
+        .bg-testimonial {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        .bg-testimonial figcaption {
+            font-size: 1rem;
+        }
+
+        .bg-testimonial em {
+            font-size: 1.2rem;
+        }
 
         footer {
             display: grid;

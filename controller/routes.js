@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
     })
 })
 
+
 //localhost:3600/home
 router.post('/', (req, res) => {
   const newMessage = {

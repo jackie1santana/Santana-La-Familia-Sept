@@ -97,11 +97,50 @@ body{
 .bg-testimonial em {
     color: white;
 }
-/* 
-.bg-testimonial img {
-    height: 70px;
-    width: 70px;
-} */
+
+#parent-button {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+
+#parent-button p {
+    font-family: Mont;
+    font-weight: bold;
+    color: white;
+}
+
+#parent-button input {
+    font-family: Mont;
+    font-weight: 700;
+    color: white;
+    background-color: #F3B340;
+    border-radius: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1rem;
+
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
+}
+
+#parent-button a {
+    text-decoration: none;
+    
+}
+
+#parent-button input:hover {
+    cursor: pointer;
+    height: 50px;
+    width:212px
+}
+
+
+
 
 #form-bg{
     width:100vw;

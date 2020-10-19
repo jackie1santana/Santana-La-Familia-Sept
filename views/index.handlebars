@@ -6,7 +6,7 @@
 <br>
         <figcaption>Since our opening, we have become masters of 
 our craft. Our  commitment to quality products, 
-exceptionalitiesl services and incomparable customer 
+exceptionalities, services and incomparable customer 
 care keep our community coming back and back again.</figcaption>
   </figure>
 
@@ -67,17 +67,35 @@ I love these clothes!! I love the fit!!! I love the price!!! I am on my 3rd orde
 </em> 
     </figure>
 
-    <div id="parent-button">
+    
+     
+</section>
+<div class="parent-button">
         <p>Check Out Our Catalog &nbsp; !</p>
         <a id="ahref-button" href="#"><input type="button" value="Shop Now"/></a>
     </div>
-     
-</section>
-
    
     {{!-- added background between image and footer because it left whitespace --}}
 <div id="wrapAround-img-footer">
 <img id="form-bg" src="../images/form-bg@2x.jpg" alt="">
-</div>
 
+    <section id="form-section">
+        
+        <h1>Get In Touch</h1>
+        
+        <form action="/message" method="post">
+            <label id="name" for="name">Name: </label>
+            <input id="name-field" type="text" name="name_field" value="">
+
+            <label id="email" for="email">Email: </label>
+            <input id="email-field" type="email" name="email_field" value="">
+
+            <label id="message" for="message">Message: </label>
+            <input id="message-field" type="text" name="message_field" value="">
+
+            <input id="submit" type="submit" value="Send Message">
+        </form>
+    </section>
+</div>
+ 
 {{!-- <img id="underBanner" src="../images/UnderHeaderBG.png" alt=""> --}}

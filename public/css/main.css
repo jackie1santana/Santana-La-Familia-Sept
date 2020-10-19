@@ -16,7 +16,7 @@ html {
     font-family: Mont;
 }
 
- /* Mobile */
+ /************* Mobile *************/
 
 
 
@@ -98,22 +98,23 @@ body{
     color: white;
 }
 
-#parent-button {
+.parent-button {
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 20px;
-    display: grid;
-    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #383B53;
+    width: 100vw;
 }
 
 
-#parent-button p {
+
+.parent-button p {
     font-family: Mont;
     font-weight: bold;
     color: white;
 }
 
-#parent-button input {
+.parent-button input {
     font-family: Mont;
     font-weight: 700;
     color: white;
@@ -124,21 +125,99 @@ body{
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 1rem;
-
     box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
 }
 
-#parent-button a {
+.parent-button a {
     text-decoration: none;
     
 }
 
-#parent-button input:hover {
+.parent-button input:hover {
     cursor: pointer;
     height: 50px;
     width:212px
 }
 
+
+
+
+
+#wrapAround-img-footer{
+    
+    width: 100vw;
+    position: relative;
+    background: #383B53;
+}
+
+
+#wrapAround-img-footer h1{
+    position: absolute;
+    top: 50px;
+    left:50px;
+    color: white;
+    
+}
+
+#wrapAround-img-footer h1::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    background: white;
+    height: 2px;
+    width: 70vw;
+    margin-left: 20px;
+}
+
+#wrapAround-img-footer label {
+    color: white;
+    margin: 0;
+}
+
+ #name {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+#email {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+#message {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+}
+
+
+
+#name-field {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+
+#email-field {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+}
+
+#message-field {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+#submit{
+    position: absolute;
+    top: 340px;
+    left: 50px;
+}
 
 
 
@@ -148,12 +227,6 @@ body{
     
 }
 
-
-
-   
-
-
-
 footer{
     text-align: center;
     padding: 1.6rem;
@@ -162,10 +235,8 @@ footer{
     width: 100vw;
 }
 
-#wrapAround-img-footer{
-    background: #383B53;
-    width: 100vw;
-}
+
+
 
 .footer__logo{
     color: white;
@@ -233,7 +304,7 @@ footer{
 
 
 
-    /* Desktop */
+    /************* Desktop *************/
     @media only screen and (min-width: 600px) {
 
         .bg-before-testimonial img{
@@ -271,6 +342,23 @@ footer{
 
         .bg-testimonial em {
             font-size: 1.2rem;
+        }
+
+        .parent-button p {
+            font-size: 1.6rem;
+        }
+
+        .parent-button input {
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .parent-button input:hover {
+            height: 65px;
+            width:335px
         }
 
         footer {

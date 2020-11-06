@@ -242,9 +242,7 @@ body{
     
 }
 
-/* #form-section{
-    margin-bottom: 30px;
-} */
+
 
 footer{
     text-align: center;
@@ -298,9 +296,7 @@ footer{
     display:none;
 }
 
-.col1:hover a{
-    color: white;
-}
+
 
 #col2_link1:hover{
     color: white;
@@ -380,24 +376,118 @@ footer{
             width:335px
         }
 
+        
+#wrapAround-img-footer{
+    
+    width: 100vw;
+    position: relative;
+    background: #383B53;
+}
+
+/* Get in Touch */
+#wrapAround-img-footer h1{
+    position: absolute;
+    top: 20px;
+    left:50px;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+
+/* Get in Touch Underlined */
+#wrapAround-img-footer h1::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    background: white;
+    height: 2px;
+    width: 70vw;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#wrapAround-img-footer label {
+    color: white;
+    margin: 0;
+}
+
+
+
+ #name {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+#name-field {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+
+
+#email {
+    position: absolute;
+    top: 165px;
+    left: 50px;
+}
+
+#email-field {
+    position: absolute;
+    top: 195px;
+    left: 50px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+
+
+#message {
+    position: absolute;
+    top: 230px;
+    left: 50px;
+}
+
+#message-field {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+#submit{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
         footer {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-           
-            /* grid template areas allows you to write out where you want your columens at exactly */
+
+            /* grid template areas allows you to write out where you want your columns at exactly */
             grid-template-areas: 
-            "logo links1 links2 social";
+            "logo links1 links2 social"
+
         }
 
         .footer__logo{
-          
+
             grid-area: logo;
         }
 
        .col1{
-            
+
             grid-area: links1;
-           
+
         }
 
         .col1 a:nth-child(1),.col1 a:nth-child(2){
@@ -406,38 +496,19 @@ footer{
         }
 
         .col2{
-            text-decoration: none;
+
             grid-area: links2;
         }
 
-        .col1:hover a{
-            color: white;
-        }
-
-        #col2_link1:hover{
-            color: white;
-        }
-
-        #col2_link2:hover{
-            color: white;
-        }
-
-        #col2_link3:hover{
-            color: white;
-        }
 
         .footer__social {
+
             grid-area: social;
         }
-      
-        .footer__social a img {
-            height: 2.5rem;
-            width: 2.5rem;
-        }
 
-        .footer__social a img:hover {
-            height: 2.59375rem;
-            width: 2.59375rem;
+        .footer__social a img {
+            height: 40px;
+            width: 40px;
         }
       }
 

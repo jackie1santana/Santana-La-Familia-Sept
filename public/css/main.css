@@ -45,16 +45,17 @@ body{
     font-family: Mont;
     font-size: 2rem;
     position: absolute;
-    top: 70px;
+    top: 130px;
     left: 15%;
     white-space: nowrap;
     color: white;
+    
 }
 
 #header-title::after{
     position: absolute;
     top: 50px;
-    left: -50px;
+    left: -35px;
     content: "";
    background-color: white;
    height: 1px;
@@ -66,7 +67,7 @@ body{
     font-family: Mont;
     font-size: 1rem;
     position: absolute;
-    top: 140px;
+    top: 200px;
     left: 30%;
     color: white;
 }
@@ -188,6 +189,7 @@ body{
     color: white;
     font-size: 1.6rem;
     font-family: Mont;
+    
     
 }
 
@@ -366,7 +368,17 @@ footer{
     
 }
 
+nav{
+    z-index: 100;
+}
 
+.navbar-brand{
+    font-family: Gab;
+    color: #F084A7 !important;
+    
+    
+   
+}
 
 
 
@@ -377,7 +389,7 @@ footer{
             font-family: Mont;
             font-size: 3rem;
             position: absolute;
-            top: 270px;
+            top: 320px;
             left: 30%;
             white-space: nowrap;
             color: white;
@@ -401,7 +413,7 @@ footer{
             font-family: Mont;
             font-size: 1.6rem;
             position: absolute;
-            top: 410px;
+            top: 440px;
             left: 37%;
             color: white;
         }
@@ -607,6 +619,8 @@ footer{
             height: 40px;
             width: 40px;
         }
+
+        
       }
 
      

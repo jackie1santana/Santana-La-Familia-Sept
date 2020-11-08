@@ -41,6 +41,36 @@ body{
     margin: 0;
 }
 
+#header-title{
+    font-family: Mont;
+    font-size: 2rem;
+    position: absolute;
+    top: 70px;
+    left: 15%;
+    white-space: nowrap;
+    color: white;
+}
+
+#header-title::after{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    content: "";
+   background-color: white;
+   height: 1px;
+   width: 440px;
+}
+
+
+#subheader-title{
+    font-family: Mont;
+    font-size: 1rem;
+    position: absolute;
+    top: 140px;
+    left: 30%;
+    color: white;
+}
+
 .bg-before-testimonial{
     background: #525E84;
     display: grid;
@@ -241,7 +271,7 @@ body{
 
 #submit{
     position: absolute;
-    top: 310px;
+    top: 307px;
     left: 50px;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -342,6 +372,39 @@ footer{
 
     /************* Desktop *************/
     @media only screen and (min-width: 600px) {
+
+        #header-title{
+            font-family: Mont;
+            font-size: 3rem;
+            position: absolute;
+            top: 270px;
+            left: 30%;
+            white-space: nowrap;
+            color: white;
+            
+        }
+        
+        #header-title::after{
+            position: absolute;
+            top: 80px;
+            left: -180px;
+            content: "";
+           background-color: white;
+           height: 3px;
+           width: 1000px;
+           -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        }
+        
+        
+        #subheader-title{
+            font-family: Mont;
+            font-size: 1.6rem;
+            position: absolute;
+            top: 410px;
+            left: 37%;
+            color: white;
+        }
 
         .bg-before-testimonial img{
             height: 120px;

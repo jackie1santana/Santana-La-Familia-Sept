@@ -1,6 +1,6 @@
     {{#if sent}}
 <div id="alert" class="alert alert-success" role="alert">
-  Your Message Was Successfully Message Sent!
+  Thank You {{firstName}}, Your Message Was Successfully Message Sent!
 </div>
 {{/if}}
 
@@ -49,7 +49,7 @@ experiences.</figcaption>
     <figure>
         <img src="../images/jessica.png" alt="">
         <br>
-        <figcaption>
+        <figcaption id="caption1">
         “Absolutely brilliant company, the 
         quality of their work is very high.
         Service is excellent, they couldn’t be 
@@ -97,10 +97,10 @@ I love these clothes!! I love the fit!!! I love the price!!! I am on my 3rd orde
 
     <section id="form-section">
         
-        <h1>Get In Touch <i class="fas fa-envelope-open-text"></i></h1>
+        <h1>Get In Touch <img id="mail-image" style="height: 40px; width: 40px; margin: 0; color: white;" src="../images/email3.png" alt=""></h1>
        
         
-        <form action="/home" method="post">
+        <form action="/" method="post">
             <label id="name" for="name">Name: </label>
             <input id="name-field" type="text" name="name" value="">
 

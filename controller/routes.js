@@ -26,7 +26,8 @@ router.post('/', (req, res) => {
         
             setTimeout(function() {
                 res.render('index', {
-                    sent: true
+                    sent: true,
+                    firstName: req.body.name
                    
                 })
                 console.log('1')

@@ -390,6 +390,13 @@ nav{
     90% {opacity: 1;-webkit-transform: translateY(0px);}
     100% {opacity: 0;-webkit-transform: translateY(-30px);}
 }
+
+#mail-image{
+    position: absolute;
+    top: -10;
+    left: 130px;
+    margin: 0;
+}
     /************* Desktop *************/
     @media only screen and (min-width: 600px) {
 
@@ -636,7 +643,16 @@ nav{
             top: 10px;
         }
         
-        
+        #mail-image{
+            position: absolute;
+            top: -10;
+            left: 230px;
+            margin: 0;
+        }
+
+        #caption1{
+            margin-right:30px;
+        }
       }
 
      

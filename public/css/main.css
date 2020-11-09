@@ -1,6 +1,4 @@
-html {
-    box-sizing: border-box;
-}
+
 
 *, *::before, *::after{
     box-sizing: inherit;
@@ -27,12 +25,14 @@ html{
 
 html, body{
     height: 100vh;   
+    overflow-x: hidden;
+    position:relative;
 }
 
 body{
     margin:0;
     padding: 0;
-    overflow-x: hidden;
+    
 }
 
 #banner{
@@ -43,10 +43,10 @@ body{
 
 #header-title{
     font-family: Mont;
-    font-size: 2rem;
+    font-size: 1.6rem;
     position: absolute;
     top: 130px;
-    left: 15%;
+    left: 10%;
     white-space: nowrap;
     color: white;
     
@@ -55,11 +55,11 @@ body{
 #header-title::after{
     position: absolute;
     top: 50px;
-    left: -35px;
+    left: -10px;
     content: "";
    background-color: white;
    height: 1px;
-   width: 440px;
+   width: 330px;
 }
 
 
@@ -67,10 +67,12 @@ body{
     font-family: Mont;
     font-size: 1rem;
     position: absolute;
-    top: 200px;
-    left: 30%;
+    top: 230px;
+    left: 15%;
     color: white;
 }
+
+
 
 .bg-before-testimonial{
     background: #525E84;
@@ -79,6 +81,7 @@ body{
     padding: 25px;
     width: 100vw;
     gap: 25px;
+    border-top: white 3px solid;
 }
 
 
@@ -433,6 +436,7 @@ nav{
             grid-template-columns: 1fr 1fr 1fr;
            grid-template-rows: auto;
            
+            border-top: white 8px solid;
         } 
 
         .bg-before-testimonial figcaption {

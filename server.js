@@ -19,9 +19,9 @@ app.set('view engine', 'handlebars')
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.use('/home', require('./controller/routes'))
+app.use('/', require('./controller/routes'))
 
 app.listen(PORT, () => {
-    console.log(`Port: ${PORT}; running at http://localhost:${PORT}/home`)
+    console.log(`Port: ${PORT}; running at http://localhost:${PORT}`)
 })
 

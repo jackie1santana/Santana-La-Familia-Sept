@@ -393,9 +393,9 @@ nav{
 
 #mail-image{
     position: absolute;
-    top: -10;
+    top: 0;
     left: 130px;
-    margin: 0;
+   
 }
     /************* Desktop *************/
     @media only screen and (min-width: 600px) {

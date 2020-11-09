@@ -1,3 +1,14 @@
+    {{#if sent}}
+<div id="alert" class="alert alert-success" role="alert">
+  Your Message Was Successfully Message Sent!
+</div>
+{{/if}}
+
+
+
+
+
+
 
 <img id="banner" src="../images/Desktop_VS_CODE4@2x.jpg" alt="">
 
@@ -68,7 +79,7 @@ experiences.</figcaption>
 I love these clothes!! I love the fit!!! I love the price!!! I am on my 3rd order from you!! I too was skeptical because you were international.. My order was here within a week and when I pulled out the clothes and tried them on.. I was skeptical no more. Keep those high low tops coming and thank you for making mje look great at work!!!
         </figcaption>
         <br>
-        <em>- &nbsp; Stephen Kuznetsov/
+        <em>- &nbsp; Stephen Kuznetsov
 </em> 
     </figure>
 
@@ -89,15 +100,15 @@ I love these clothes!! I love the fit!!! I love the price!!! I am on my 3rd orde
         <h1>Get In Touch</h1>
        
         
-        <form action="/message" method="post">
+        <form action="/home" method="post">
             <label id="name" for="name">Name: </label>
-            <input id="name-field" type="text" name="name_field" value="">
+            <input id="name-field" type="text" name="name" value="">
 
             <label id="email" for="email">Email: </label>
-            <input id="email-field" type="email" name="email_field" value="">
+            <input id="email-field" type="email" name="email" value="">
 
             <label id="message" for="message">Message: </label>
-            <textarea id="message-field" type="textarea" name="message_field" value=""></textarea>
+            <textarea id="message-field" type="textarea" name="message" value=""></textarea>
 
             <input id="submit" type="submit" value="Send Message">
             

@@ -1,8 +1,13 @@
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://localhost:27017/SantanaLaF', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/SantanaLaF', {useNewUrlParser: true, useUnifiedTopology: true});
 
-// const Form = mongoose.model('Form', { name: String });
+const Form = mongoose.model('Form', 
+{ 
+name: String,
+email: String,
+message: String
+});
 
-// const message = new Form({ name: 'Santana' });
-// message.save().then(() => console.log('message stored in database'))
+
+module.exports = Form 

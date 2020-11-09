@@ -184,7 +184,7 @@ body{
 /* Get in Touch */
 #wrapAround-img-footer h1{
     position: absolute;
-    top: 0px;
+    top: 10px;
     left:50px;
     color: white;
     font-size: 1.6rem;
@@ -369,7 +369,7 @@ footer{
 }
 
 nav{
-    z-index: 100;
+    z-index: 3;
 }
 
 .navbar-brand{
@@ -380,8 +380,24 @@ nav{
    
 }
 
+#alert {
+    position: fixed;
+     z-index: 5; 
+     right: 30px;
+     top: 10px;
 
+     
+     -webkit-animation: fadeOut 3s linear forwards;
+     animation: fadeOut 3s linear forwards;
+ 
+}
 
+@-webkit-keyframes fadeOut {
+    0%   {opacity: 1;}
+    70%  {opacity: 1;}
+    90% {opacity: 1;-webkit-transform: translateY(0px);}
+    100% {opacity: 0;-webkit-transform: translateY(-30px);}
+}
     /************* Desktop *************/
     @media only screen and (min-width: 600px) {
 
@@ -620,6 +636,13 @@ nav{
             width: 40px;
         }
 
+        #alert {
+            position: fixed; 
+           
+            right: 30px;
+            top: 10px;
+        }
+        
         
       }
 
